@@ -1,6 +1,5 @@
-const form = document.getElementById('form');
 const email = document.getElementById('email');
-const newPassword = document.getElementById('newPassword');
+const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
 form.addEventListener('submit', e => {
@@ -34,7 +33,7 @@ const isValidEmail = email => {
 
 const validateInputs = () => {
     const emailValue = email.value.trim();
-    const newPasswordValue = newPassword.value.trim();
+    const passwordValue = password.value.trim();
     const password2Value = password2.value.trim();
 
 
@@ -46,9 +45,9 @@ const validateInputs = () => {
         setSuccess(email);
     }
 
-    if(newPasswordValue === '') {
+    if(passwordValue === '') {
         setError(password, 'Password is required');
-    } else if (newPasswordValue.length < 8 ) {
+    } else if (passwordValue.length < 8 ) {
         setError(password, 'Password must be at least 8 character.')
     } else {
         setSuccess(password);
