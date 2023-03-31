@@ -28,7 +28,7 @@ ul {
 }
 a{
     text-decoration: none;
-    color: #333;
+    color: #33000066;
 }
 
 p {
@@ -63,12 +63,68 @@ img {
 .navbar .flex {
     justify-content: space-between;
 }
-
+/*main*/
 .showcase{
     height:400px;
-    background-color: var(--main-color)
-    
+    background-color: #000066;
+    color:whitesmoke;
+    position:relative;
 }
+
+.showcase h1 {
+    font-size: 40px;
+
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase-form{
+    position: relative;
+    top: 60px;
+    height: 350px;
+    width:400px;
+    padding:40px;
+    z-index:100;
+}
+.showcase-form .form-control{
+    margin:30px 0;
+}
+
+.showcase-form input[type='text'] {
+    border:0;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.showcase-form input[type='email'] {
+    border: 0;
+    border-bottom: 1px solid #fff;
+    width:100%;
+    padding: 3px;
+    font-size: 16px;
+}
+.showcase-form input:focus {
+    outline:none;
+}
+
+.showcase::before,
+.showcase::after {
+    content: '';
+    position: absolute;
+    height: 100px;
+    bottom:-70px;
+    right:0;
+    left: 0;
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+    
+
 
 /*Classes*/
 .container {
@@ -82,5 +138,53 @@ img {
     display: flex;
     justify-content: space-between;
     height:100%;
+
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 300px 200px;
+    gap:20px;
+    justify-self: center;
+    align-items: center;
+    height:100%;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% auto;
+    gap: 30px;
+    overflow: visible;
+}
+
+.card {
+    background-color: rgb(216, 161, 11);
+    color:antiquewhite;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor:pointer;
+    background: var(--main-color);
+    color:antiquewhite;
+    border: antiquewhite;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.btn-outline {
+    background-color: transparent;
+    border: 1px antiquewhite solid;
+}
+.btn:hover {
+    transform: scale(.98)
+    
+}
+.fade:hover {
+    background-color:antiquewhite;
+    color:black;
 
 }
