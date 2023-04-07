@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
      
         <link rel="stylesheet" href="css/style.css">
+
+        <link rel="stylesheet" href="js/index.js"
     
         
     
@@ -34,7 +36,7 @@
         
         <section class="showcase">
             <div class="container grid">
-                <div class=".showcase-text" class="wrapper">
+                <div class="showcase-text" class="wrapper">
                     <h1>The Place Where Dreams Come True</h1>
                     <p>Bluegrass Travel is the place to go when your looking for your travel wishes to be made true. We book vacations anywhere in the world from North Korea to Antartica. Luxury and budget trips of any length can be booked here. We're here to serve you</p>
                     <a href="index.html" class="btn btn-outline" button class="fade">Book Now!</a>
@@ -43,15 +45,18 @@
                 <div class="showcase-form card">
                     <h2>Sign Up </h2>
                     <form>
-                        <form id="form" action="/"></form>
-                        <div class="form-control" class="input-control">
-                            <input id="email" type="text" name="Email" placeholder="Email" required
+                        <form id="form" action="/">
+                        <div class="input-control">
+                            <input id="email" type="text" name="Email" placeholder="Email" required>
+                            <div class="error"></div>
                         </div>
-                        <div class="form-control">
-                            <input id="password" type="text" name="Password" placeholder="Password" required
+                        <div class="input-control">
+                            <input id="password" type="text" name="Password" placeholder="Password" required>
+                            <div class="error"></div>
                         </div>
-                        <div class="form-control">
-                            <input id="password" type="text" name="Password" placeholder="Password" required
+                        <div class="input-control">
+                            <input id="password" type="text" name="Password" placeholder="Password" required>
+                            <div class="error"></div>
                         </div>
                         <div>
                             <input type="submit" value="send" class="btn btn-primary">
@@ -60,5 +65,65 @@
                 </div>
             </div>
         </section>
+
+        <section class="stats">
+            <div class="container">
+                <h3 class="stats-heading text-center my-1">
+                    Get inspiration for your next vacation on the best site!
+                </h3>
+    
+                <div class="grid grid-3 text-center my-4">
+                    <div>
+                        <i class="fas fa-server fa-3x"></i>
+                        <h3>4,000</h3>
+                        <p class="text-secondary">New Applicants a month</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-upload fa-3x"></i>
+                        <h3>500</h3>
+                        <p class="text-secondary">Trips Booked</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-project-diagram fa-3x"></i>
+                        <h3>100%</h3>
+                        <p class="text-secondary">Happy Travelers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        
+        <section class="cli">
+            <div class="container grid">
+                <img src="images/cli.png" alt="">
+                <div class="card">
+                    <h3>Easy to useI</h3>
+                </div>
+                <div class="card">
+                    <h3>Stress free planning</h3>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+        <!-- Footer -->
+        <footer class="footer bg-dark py-5">
+            <div class="container grid grid-3">
+                <div>
+                    <h1>Bluegrass Travel
+                    </h1>
+                    <p>Copyright &copy; 2023</p>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="features.html">Features</a></li>
+                        <li><a href="docs.html">Docs</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+
     </body>
 </html>
